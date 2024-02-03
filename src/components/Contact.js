@@ -4,6 +4,7 @@ import contactImg from "../assets/img/contact-img.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import copy from '../assets/img/copy-solid.svg';
+import { AlignCenter } from "react-bootstrap-icons";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -51,7 +52,7 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" style={{ width: '30em', height: 'auto' }} />
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', scale:"75%"}}/>
               }
             </TrackVisibility>
           </Col>
@@ -60,9 +61,9 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <h3>
- Email: isaactanjiahao@gmail.com
- <img 
+                <div class="container">
+                <h3>Email: isaactanjiahao@gmail.com
+                  <img 
     src={copy} 
     style={{ width: '4rem', height: 'auto', padding: '0rem 0rem 0rem 2rem',filter: 'invert(100%)', cursor: 'pointer' }}
     className="copy-icon"
@@ -73,9 +74,7 @@ export const Contact = () => {
       } catch (err) {
         alert('Failed to copy email');
       }
-    }}
- />
-</h3>
+    }}/></h3></div>
                     </div>}
             </TrackVisibility>
           </Col>
