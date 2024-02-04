@@ -50,9 +50,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               { <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
+                <a href="#"onClick={() => alert('Still work in progress :p')}><img src={navIcon1} alt="" /></a>
               
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a onClick={()=> window.open("https://www.instagram.com/strawberryeyescream?igsh=eXVldXZhZW9iN2U4", "_blank")}><img src={navIcon3} alt="" /></a>
               </div> }
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
