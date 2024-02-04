@@ -61,12 +61,12 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <div class="container">
-                <h3>Email: isaactanjiahao@gmail.com
-                  <img 
-    src={copy} 
-    style={{ width: '4rem', height: 'auto', padding: '0rem 0rem 0rem 2rem',filter: 'invert(100%)', cursor: 'pointer' }}
-    className="copy-icon"
+                <div class="container email-container" style={{ display: 'flex', alignItems: 'center' , flexWrap: 'nowrap'}}>
+  <div>
+    <p class="myemail" >Email: isaactanjiahao@gmail.com</p>
+  </div>
+  <button 
+    style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
     onClick={async () => {
       try {
         await navigator.clipboard.writeText('isaactanjiahao@gmail.com');
@@ -74,8 +74,15 @@ export const Contact = () => {
       } catch (err) {
         alert('Failed to copy email');
       }
-    }}/></h3></div>
-                    </div>}
+    }}
+  >
+    <img 
+      src={copy} 
+      className="copy-icon"
+      alt="Copy Icon"
+    />
+  </button>
+</div></div>}
             </TrackVisibility>
           </Col>
         </Row>

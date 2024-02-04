@@ -40,24 +40,27 @@ export const Skills = () => {
                             <div className="item">
                                 {/* <img src={meter1} alt="Image" /> */}
                                 <h5>Java</h5>
-                                <h6>Basic OOP</h6>
+                       
                             </div>
                             <div className="item">
                                 {/* <img src={meter2} alt="Image" /> */}
                                 <h5>Python</h5>
-                                <h6>Create web scraping bot<br>
-                                </br>for my timetable</h6>
+                                
                             </div>
                             <div className="item">
                                 {/* <img src={meter3} alt="Image" /> */}
-                                <h5>React</h5>
-                                <h6>Beginner<br></br>As seen in this website
-                                </h6>
+                                <h5>Full-stack <br></br>web development<br></br>MERN</h5>
+                               
                             </div>
                             <div className="item">
                                 {/* <img src={meter1} alt="Image" /> */}
                                 <h5>Photography</h5>
-                                <h6>Personal interest</h6>
+                               
+                            </div>
+                            <div className="item">
+                                {/* <img src={meter1} alt="Image" /> */}
+                                <h5>Pandas &<br></br>Numpy(python)</h5>
+                               
                             </div>
                         </Carousel>
                     </div>

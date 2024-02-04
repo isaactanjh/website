@@ -84,6 +84,16 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+.navbar-logo {
+   /* Adjust the logo size as needed */
+  cursor: pointer; /* Changes the cursor to indicate the logo is clickable */
+  transition: transform 0.8s ease; /* Smooth transition for the hover effect */
+}
+
+.navbar-logo:hover {
+  transform: rotate(360deg) scale(1.3);
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -92,6 +102,16 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+  
+@media (max-width:768px) {
+	nav.navbar {
+    background-color: #121212;
+    border-bottom-left-radius: 20px; /* Adjust the radius as needed */
+    border-bottom-right-radius: 20px; /* Adjust the radius as needed */
+}
+  }
+
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -322,14 +342,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 5rem 0 50px 0;
   position: relative;
 }
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 60px 10px;
   margin-top: -60px;
 }
 .skill h2 {
@@ -352,6 +372,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
+.skill-slider .item{
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks flex items vertically */
+  justify-content: center; /* Centers items vertically in the container */
+  align-items: center; /* Centers items horizontally in the container */
+  height: 100px; /* Adjust height as needed */
+  text-align: center; /* Ensures text within children elements is centered */
+}
+
+  
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -492,7 +522,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
 }
 .contact img {
-  width: 92%;
+  width:92%;
 }
 .contact h2 {
 	font-size: 45px;
@@ -559,10 +589,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-
-.copy-icon {
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for the opacity change */
-}
+.myemail {
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    .myemail {
+      font-size: 20px;
+    }
+  
+  }
+  .copy-icon {
+    transition: opacity 0.3s ease-in-out;
+    width: 30%; /* Example of using viewport width */
+    max-width: 5rem; /* Ensures the icon doesn't get too large */
+    height: auto;
+    padding: 0 0 1rem 2rem; /* Example of using percentage */
+    border-right: 5rem;
+    filter: invert(100%);
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .copy-icon {
+      max-width: 5rem;
+    }
+  }
 
 .copy-icon:hover {
   opacity: 0.2; /* Change the opacity when hovered */
