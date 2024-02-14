@@ -69,7 +69,7 @@ export const Contact = () => {
     style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
     onClick={async () => {
       try {
-        await navigator.clipboard.writeText('isaactanjiahao@gmail.com');
+        await navigator.clipboard.writeText('tanjiahaoisaac@gmail.com');
         alert('Email copied to clipboard');
       } catch (err) {
         alert('Failed to copy email');
