@@ -63,7 +63,7 @@ export const Contact = () => {
                 <h2>Get In Touch</h2>
                 <div class="container email-container" style={{ display: 'flex', alignItems: 'center' , flexWrap: 'nowrap'}}>
   <div>
-    <p class="myemail" >Email: isaactanjiahao@gmail.com</p>
+    <p class="myemail" >Email: tanjiahaoisaac@gmail.com</p>
   </div>
   <button 
     style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
