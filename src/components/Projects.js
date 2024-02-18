@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/Picture2.png";
 import projImg2 from "../assets/img/Picture1.png";
 import projImg3 from "../assets/img/Picture3.png";
 import projImg4 from "../assets/img/Picture4.png";
+import projImg5 from "../assets/img/Picture5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -32,12 +33,13 @@ export const Projects = () => {
       description: "Personal project\nLearnt front-end web dev using React",
       imgUrl: projImg4,
     },
-    /*
+    
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Telegram Timetable AI Bot",
+      description: "Hackathon project\nLearnt working with telegram bot API\n and OpenAI API to generate timetable\n based on user input",
+      imgUrl: projImg5,
     },
+    /*
     {
       title: "Business Startup",
       description: "Design & Development",
