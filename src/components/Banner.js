@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.png";
-import { ArrowRightCircle, Router } from 'react-bootstrap-icons';
+import { ArrowRightCircle} from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HashLink } from 'react-router-hash-link';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
@@ -13,7 +13,7 @@ export const Banner = () => {
 
 
   return (
-    
+    <Router>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
@@ -27,8 +27,9 @@ export const Banner = () => {
                     Interested in data science and engineering roles.<br></br>
                     On the lookout for exciting internship opportunities!
                   </p>
-                  
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <HashLink to='#connect'>
+                    <button>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </HashLink>
                   
               </div>}
             </TrackVisibility>
@@ -44,6 +45,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
-    
+    </Router>
   )
 }

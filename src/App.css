@@ -306,6 +306,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   cursor: default;
+  
 }
 .banner button svg {
   font-size: 25px;
@@ -316,11 +317,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner button:hover svg {
   margin-left: 25px;
-  cursor: default;
+  cursor: pointer;
 }
-.banner button:hover {
-  cursor: default;
-}
+
 .banner img {
   animation: updown 3s linear infinite;
   padding-top: 1em;

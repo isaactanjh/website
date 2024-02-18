@@ -1,16 +1,11 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -38,27 +33,22 @@ export const Skills = () => {
                         <p>Here are some language and framework that I am learning.<br></br>Currently self learning MERN stack for web-dev and data engineering.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                {/* <img src={meter1} alt="Image" /> */}
                                 <h5>Java</h5>
                        
                             </div>
                             <div className="item">
-                                {/* <img src={meter2} alt="Image" /> */}
                                 <h5>Python</h5>
                                 
                             </div>
                             <div className="item">
-                                {/* <img src={meter3} alt="Image" /> */}
                                 <h5>Full-stack <br></br>web development<br></br>MERN</h5>
                                
                             </div>
                             <div className="item">
-                                {/* <img src={meter1} alt="Image" /> */}
                                 <h5>Photography</h5>
                                
                             </div>
                             <div className="item">
-                                {/* <img src={meter1} alt="Image" /> */}
                                 <h5>Pandas &<br></br>Numpy(python)</h5>
                                
                             </div>
