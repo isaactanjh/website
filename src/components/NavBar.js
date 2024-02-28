@@ -49,7 +49,7 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               { <div className="social-icon">
-                <a href="#"onClick={() => alert('Still work in progress :p')}><img src={navIcon1} alt="" /></a>
+                <a href="#"className="instabutton" onClick={()=> window.open("https://www.linkedin.com/in/tanjiahao-isaac/", "_blank")} ><img src={navIcon1} alt="" /></a>
               
                 <a href="#"className="instabutton" onClick={()=> window.open("https://www.instagram.com/strawberryeyescream?igsh=eXVldXZhZW9iN2U4", "_blank")} ><img src={navIcon3} alt="" /></a>
               </div> }
